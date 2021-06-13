@@ -1,0 +1,28 @@
+{
+    "name": "version-updater",
+    "version": "1.0.0",
+    "description": "This is a Github action for version updater that also can be used as a library.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/merighifacundo/node-version-updater.git"
+    },
+    "keywords": [
+        "GitHub-Actions",
+        "Node",
+        "Version"
+    ],
+    "author": "Facundo Merighi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/merighifacundo/node-version-updater/issues"
+    },
+    "homepage": "https://github.com/merighifacundo/node-version-updater#readme",
+    "dependencies": {
+        "@actions/core": "^1.4.0",
+        "semver": "^7.3.5"
+    }
+}

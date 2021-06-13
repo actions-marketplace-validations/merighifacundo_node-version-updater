@@ -1,0 +1,10 @@
+name: 'Version Bump for Node'
+description: 'Updates the version of package.json and package-lock.json'
+inputs:
+  new-version:
+    description: 'This is the new version if non is added we will bump the last one.'
+    required: false
+    default: null
+runs:
+  using: 'node12'
+  main: 'index.js'
