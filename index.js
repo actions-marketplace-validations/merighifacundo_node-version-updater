@@ -6,7 +6,7 @@ try {
     let newVersion = core.getInput('new-version');
     const packageRaw = fs.readFileSync('package.json');
     const packageLockRaw = fs.readFileSync('package-lock.json');
-    const oldVersion = packageLockRaw.version;
+    const oldVersion = packageRaw.version;
     let packageLockInformation = JSON.parse(packageLockRaw);
     let packageInformation = JSON.parse(packageRaw);
     const {package, packageLock} = validateAndUpdate(newVersion, packageInformation, packageLockInformation);
