@@ -4,7 +4,6 @@ const fs = require('fs');
 
 try {
     let newVersion = core.getInput('new-version');
-    console.log(`New version to get updated ${package.version}`);
     const packageRaw = fs.readFileSync('package.json');
     const packageLockRaw = fs.readFileSync('package-lock.json');
     const oldVersion = packageLockRaw.version;
