@@ -14,6 +14,7 @@ try {
     fs.writeFileSync('package-lock.json',JSON.stringify(packageLock, null, 4));
     console.log(`New version to get updated ${package.version} from ${oldVersion}`);
     core.setOutput('old-version', oldVersion);
+    core.setOutput('new-version', package.version);
 } catch (error) {
     console.error(error);
     core.setFailed(error.message);

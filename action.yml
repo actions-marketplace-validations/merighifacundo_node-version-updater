@@ -6,6 +6,8 @@ inputs:
     required: false
     default: null
 outputs:
+  new-version:
+    description: 'This is the old version if non is added we will bump the last one.'
   old-version:
     description: 'This is the old version if non is added we will bump the last one.'
 runs:
