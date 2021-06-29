@@ -6,6 +6,7 @@ try {
     let newVersion = core.getInput('new-version');
     const packageRaw = fs.readFileSync('package.json');
     const packageLockRaw = fs.readFileSync('package-lock.json');
+    console.log(packageLockRaw);
     let packageLockInformation = JSON.parse(packageLockRaw);
     let packageInformation = JSON.parse(packageRaw);
     const oldVersion = packageInformation.version;
